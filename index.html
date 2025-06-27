@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-grid"></div> <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">JUPER<span>_</span></div>
+                <nav>
+                    <a href="#home" class="nav-link active">Strona Główna</a>
+                    <a href="#messages" class="nav-link">Wiadomości</a>
+                </nav>
+                <div class="header-placeholder"></div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section id="home" class="page active">
+                <div class="info-box">
+                    <h3>Zostaw anonimowy ślad</h3>
+                    <p>Przejdź do sekcji wiadomości, aby podzielić się swoją historią, myślą lub sekretem. System jest w 100% anonimowy.</p>
+                    <button id="go-to-messages-btn" class="cta-button">Wyślij Wiadomość</button>
+                </div>
+
+                <div class="story-grid">
+                    <div class="story-image-container">
+                        <img src="assets/stopa.jpg" alt="Estetyczne zdjęcie stopy na neutralnym tłem">
+                    </div>
+                    <div class="story-content">
+                        <h2>Opowieść o Juperze i Zapomnianej Sztuce</h2>
+                        <p>W betonowej dżungli cyfrowego miasta, gdzie neony rzucają długie cienie na mokry asfalt, żył człowiek znany jako Juper. Nie był hakerem, ani ulicznym samurajem. Był koneserem. Jego pasją, jego obsesją, jego sztuką, były... stopy.</p>
+                        <p>Dla innych były tylko kończynami, narzędziem do chodzenia. Dla Jupera były mapą życia. Widział w nich historie, których nikt inny nie dostrzegał. Zmarszczki na pięcie opowiadały o tysiącach przebytych kroków, o ucieczkach i powrotach. Blizna na kostce była pamiątką po brawurowym skoku przez ogrodzenie, a idealnie ukształtowany łuk stopy był dla niego tym, czym dla astronoma idealna orbita planety – dowodem na istnienie porządku w chaosie.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="messages" class="page">
+                <div class="submission-box">
+                    <h3>Zostaw swój anonimowy ślad</h3>
+                    <p>Twoja wiadomość trafi prosto na nasz kanał Discord. Bez logów, bez śladów, pełna anonimowość.</p>
+                    <textarea id="message-content" placeholder="Wpisz treść wiadomości..."></textarea>
+                    <button id="send-btn">Wyślij Anonimowo</button>
+                </div>
+                <div class="feed-header"><h2>Dziennik Transmisji</h2></div>
+                <div class="post-feed">
+                    </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Juper. Wszelkie ślady zatarte.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
